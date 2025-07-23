@@ -1,0 +1,159 @@
+footer {
+  background-color: #090739;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-section .contact-information p,
+.footer-section .contact-information a {
+  margin: 8px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-section .contact-information i {
+  margin-right: 8px;
+}
+
+.footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.footer-gallery img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ✅ Newsletter layout - SIDE-BY-SIDE with spacing */
+.newsletter {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* 🟢 If you prefer vertical stacked layout, use this instead:
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+*/
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+/* For vertical layout uncomment below:
+.newsletter input[type="email"] {
+  width: 100%;
+  border-radius: 4px;
+}
+*/
+
+.newsletter button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #00cfff;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* For vertical layout uncomment below:
+.newsletter button {
+  border-radius: 4px;
+}
+*/
+
+.footer-bottom {
+  border-top: 1px solid #1f223c;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%;
+    border-radius: 4px;
+  }
+}

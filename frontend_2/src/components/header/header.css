@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  color: #161179;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #161179;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #161179;
+}
+
+.link a {
+  margin-left: 20px;
+  color: #161179;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #FBE4D6;
+}

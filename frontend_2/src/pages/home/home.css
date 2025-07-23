@@ -1,0 +1,76 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("C:\Users\gamit\OneDrive\Desktop\E-LEARNING PLATFORM\frontend_2\src\img\home_1.jpg"); /* Use your actual image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Content starts from left side */
+  padding-left: 80px;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(73, 70, 86, 0.456); /* Dark overlay */
+  z-index: 1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #fff;
+  padding: 20px;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.home-content button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-content button:hover {
+  background-color: #9da3d7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    padding-left: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
